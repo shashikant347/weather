@@ -16,6 +16,7 @@ async function checkWeather(city) {
   
   console.log(data.wind.speed)
   
+  // all selected elements
   
   document.querySelector('.city-name').innerHTML = data.name;
   document.querySelector('.temp').innerHTML = Math.round(((data.main.temp)-273.15)) +'°C';
@@ -27,8 +28,7 @@ async function checkWeather(city) {
 }
 
 
-
-
+// searchbutton 
 searchbutton.addEventListener('click',()=>{
   checkWeather(input.value);
   
